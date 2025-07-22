@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import {
   Code, FileCode, Server, Database, PanelRight, Workflow, Laptop, Github,
-  Users, ShoppingCart, Briefcase, MessageSquare, StickyNote, Film, Target,
-  Gamepad, Car, ExternalLink
+  Gamepad, ExternalLink, LayoutDashboard,
 } from "lucide-react";
 
 export default function Projects() {
@@ -10,16 +9,39 @@ export default function Projects() {
   const [isLoading, setIsLoading] = useState(false);
 
   const projectList = [
-    
-    {
-      title: "My Portfolio",
-      description: "I built my personal portfolio using Next.js 15 with the App Router, ensuring a modern, high-performance web experience.",
-      image: "/project3.png",
-      tech: ["Next.js", "React-icons", "Framer-Motion","Three.js","Gsap"],
-      icon: <Laptop className="w-6 h-6" />,
-      github: "https://github.com/Shaikhshams17/portfolio"
-    }
-  ];
+  {
+    title: "Landing Page UI",
+    description: "Designed a modern landing page using HTML, JavaScript, and Bootstrap. Built for speed and clean structure using component-like code with responsive sections.",
+    image: "/project1.png",
+    tech: ["HTML", "JavaScript", "Bootstrap"],
+    icon: <LayoutDashboard className="w-6 h-6" />,
+    github: "https://github.com/BasimThakur/Food-Site-Responsive"
+  },
+  {
+    title: "Component Practice with React",
+    description: "Created a beginner-level React project to practice component-based architecture, state management, and prop drilling using functional components.",
+    image: "/project2.png",
+    tech: ["React.js", "JavaScript", "JSX"],
+    icon: <Code className="w-6 h-6" />,
+    github: "https://github.com/BasimThakur/caretline" 
+  },
+  {
+    title: "My Portfolio",
+    description: "I built my personal portfolio using Next.js 15 with the App Router, ensuring a modern, high-performance web experience.",
+    image: "/project3.png",
+    tech: ["Next.js", "React-icons", "Framer-Motion", "Three.js", "Gsap"],
+    icon: <Laptop className="w-6 h-6" />,
+    github: "https://github.com/BasimThakur/My_Portfolio"
+  },
+  {
+    title: "Two Good Co.",
+    description: "Developed a smooth and responsive card-based UI to experiment with grid layouts, spacing, and interactive animations for frontend practice.",
+    image: "/project4.png",
+    tech: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    icon: <LayoutDashboard className="w-6 h-6" />,
+    github: "https://github.com/BasimThakur/Two-Good-Co." 
+  }
+];
 
   const techIcons = {
     "MongoDB": <Database className="w-4 h-4" />,
